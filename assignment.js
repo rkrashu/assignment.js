@@ -17,19 +17,19 @@ console.log(result);
 
 // budget Calculator
 
-function budgetCalculator (watch, phone, laptop){
+function budgetCalculator(watch, phone, laptop) {
     var watchPrice = watch * 50;
     var phonePrice = phone * 100;
     var laptopPrice = laptop * 500;
-    var total = watchPrice + phonePrice +laptopPrice
-    console.log(total)
+    var total = watchPrice + phonePrice + laptopPrice;
+    return total;
 }
-    budgetCalculator( 5, 2, 1)
+var totalbudget = budgetCalculator(5, 3, 2);
+console.log(totalbudget);
 
 
 
-
-        // hotel cost
+// hotel cost
 
 function hotelCost(day) {
     if (day <= 10) {
@@ -45,7 +45,7 @@ function hotelCost(day) {
         var first10Days = 10 * 100;
         var second10Days = 10 * 80;
         var thirdPart = (day - 20) * 50;
-        var total = first10Days + second10Days + thirdPart
+        var total = first10Days + second10Days + thirdPart;
     }
     return total;
 }
@@ -55,15 +55,15 @@ console.log(totalCost);
 
 // Mega Friend
 
-function megaFriend(name){
-    var friend ="";
-for (var i = 0; i < name.length; i++) { 
-    var element = name[i];       
-    if (element.length > friend.length) {
-        friend = element;
+function megaFriend(name) {
+    var largestName = "";
+    for (var i = 0; i < name.length; i++) {
+        var element = name[i];
+        if (element.length > largestName.length) {
+            largestName = element;
+        }
     }
+    return largestName;
 }
-return friend;
-}
-var output = megaFriend(["lia", "tariqul", "bappi", "tumpa", "hasan", "salauddin"])
-console.log(output)
+var output = megaFriend(["lia", "tariqul", "bappi", "tumpa", "hasan", "salauddin"]);
+console.log(output);
